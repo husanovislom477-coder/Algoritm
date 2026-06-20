@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #products{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card{
+            width: 250px;
+            border: 1px solid  gray;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        img{
+            width: 200px !important;
+            height: 200px !important;
+            object-fit: contain;
+        }
+        button{
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <button id="btn">Add</button>
+    <div id="products"></div>
+        <script src="./script.js"></script>
+</body>
+</html>
